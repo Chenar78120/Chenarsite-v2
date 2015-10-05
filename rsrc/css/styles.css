@@ -1572,6 +1572,24 @@ h2 {
 .nav-item.six:hover {
   background: #967ADC;
 }
+.nav-item.one.active {
+  background: #ED5565;
+}
+.nav-item.two.active {
+  background: #A0D468;
+}
+.nav-item.three.active {
+  background: #FFCE54;
+}
+.nav-item.four.active {
+  background: #5D9CEC;
+}
+.nav-item.five.active {
+  background: #EC87C0;
+}
+.nav-item.six.active {
+  background: #967ADC;
+}
 .black-trans {
   background-color: #000000;
   opacity: 1;
