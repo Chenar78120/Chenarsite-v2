@@ -1529,6 +1529,19 @@ h2 {
   -webkit-transition: all 600ms cubic-bezier(0, 0, 0, 1);
   transition: all 600ms cubic-bezier(0, 0, 0, 1);
 }
+.navbar2 {
+  z-index: 10000;
+  background: #1f282d;
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  vertical-align: middle;
+  display: table;
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0, 1);
+}
 .navbar-inner {
   display: table-cell;
   vertical-align: middle;
@@ -1555,40 +1568,40 @@ h2 {
   line-height: 2em;
 }
 .nav-item.one:hover {
-  background: #ED5565;
+  background: #c9b5d9;
 }
 .nav-item.two:hover {
-  background: #A0D468;
+  background: #c9b5d9;
 }
 .nav-item.three:hover {
-  background: #FFCE54;
+  background: #c9b5d9;
 }
 .nav-item.four:hover {
-  background: #5D9CEC;
+  background: #c9b5d9;
 }
 .nav-item.five:hover {
-  background: #EC87C0;
+  background: #c9b5d9;
 }
 .nav-item.six:hover {
-  background: #967ADC;
+  background: #c9b5d9;
 }
 .nav-item.one.active {
-  background: #ED5565;
+  background: #652480;
 }
 .nav-item.two.active {
-  background: #A0D468;
+  background: #652480;
 }
 .nav-item.three.active {
-  background: #FFCE54;
+  background: #652480;
 }
 .nav-item.four.active {
-  background: #5D9CEC;
+  background: #652480;
 }
 .nav-item.five.active {
-  background: #EC87C0;
+  background: #652480;
 }
 .nav-item.six.active {
-  background: #967ADC;
+  background: #652480;
 }
 .black-trans {
   background-color: #000000;
