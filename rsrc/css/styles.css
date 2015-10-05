@@ -767,8 +767,11 @@ html {
   background-size: cover;
   font-family: source-sans-pro, sans-serif;
 }
-body {
-  background: url(../m/blur.png) 100% no-repeat;
+.bgi {
+  background: url(../m/background.jpg) 100% no-repeat;
+}
+.bgs {
+  background: url(../m/blur.jpg) 100% no-repeat;
 }
 .metro {
   width: 890px;
@@ -800,7 +803,7 @@ h2 {
   text-align: center;
 }
 @media screen and (orientation: portrait) {
-  body {
+  .bgs {
     background: url(../m/blur-mobile.jpg) 100% no-repeat;
   }
 }
