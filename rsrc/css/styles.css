@@ -773,11 +773,13 @@ html {
 }
 .bgs {
   background: url(../m/blur.png) 100% no-repeat;
+  background-size: cover;
 }
 .metro {
   width: 890px;
   margin: 0 auto;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 .accueil {
   position: relative;
@@ -814,6 +816,44 @@ h2 {
 .metro .pull-right {
   float: right;
 }
+.metro .largexl-bottom {
+  position: relative;
+  width: 810px;
+  height: 400px;
+  margin: 5px;
+  background: #111;
+  overflow: hidden;
+}
+.metro .largexl-bottom:hover .amazones {
+  top: -100px;
+}
+.metro .largexl-bottom:hover .lgxl {
+  bottom: 0;
+}
+.metro .largexl-bottom .lgxl {
+  width: 810px;
+  height: 100px;
+  background: #fff;
+  position: absolute;
+  bottom: -100px;
+  transition: all 1s;
+  z-index: 100;
+}
+.metro .largexl-bottom .lgxl h1 {
+  font-size: 6em;
+  text-align: center;
+  margin-top: 0px;
+}
+.metro .largexl-bottom .amazones {
+  position: relative;
+  top: 0;
+  height: 400px;
+  width: 810px;
+  background: url(../../media/vignette/amazones.jpg) no-repeat center;
+  background-size: cover;
+  transition: all 1s;
+  z-index: 50;
+}
 .metro .large-top {
   position: relative;
   width: 400px;
@@ -823,7 +863,8 @@ h2 {
   overflow: hidden;
 }
 .metro .large-top:hover .fruitgy,
-.metro .large-top:hover .melies {
+.metro .large-top:hover .melies,
+.metro .large-top:hover .Bmyhome {
   top: 100px;
 }
 .metro .large-top:hover .lg {
@@ -863,6 +904,16 @@ h2 {
   transition: all 1s;
   z-index: 50;
 }
+.metro .large-top .Bmyhome {
+  position: relative;
+  top: 0;
+  height: 310px;
+  width: 400px;
+  background: url(../../media/vignette/bmyhome.png) no-repeat center;
+  background-size: cover;
+  transition: all 1s;
+  z-index: 50;
+}
 .metro .large-bottom {
   position: relative;
   width: 400px;
@@ -872,7 +923,8 @@ h2 {
   overflow: hidden;
 }
 .metro .large-bottom:hover .paris,
-.metro .large-bottom:hover .caravan {
+.metro .large-bottom:hover .caravan,
+.metro .large-bottom:hover .amazones {
   top: -100px;
 }
 .metro .large-bottom:hover .lg {
@@ -908,6 +960,16 @@ h2 {
   height: 310px;
   width: 400px;
   background: url(../../media/image/caravan.jpg) no-repeat center;
+  background-size: cover;
+  transition: all 1s;
+  z-index: 50;
+}
+.metro .large-bottom .amazones {
+  position: relative;
+  top: 0;
+  height: 310px;
+  width: 400px;
+  background: url(../../media/vignette/amazones.jpg) no-repeat center;
   background-size: cover;
   transition: all 1s;
   z-index: 50;
@@ -1460,9 +1522,9 @@ h2 {
 }
 .menu-icon {
   position: fixed;
-  top: 35%;
+  top: 30%;
   left: -48px;
-  height: 240px;
+  height: 280px;
   width: 96px;
   background: #1F282D;
   border-top-right-radius: 48px;
@@ -1472,9 +1534,9 @@ h2 {
 }
 .menu-icon img {
   position: relative;
-  top: 25px;
+  top: 38px;
   left: 46px;
-  height: 180px;
+  height: 200px;
   width: 48px;
   opacity: 0.8;
 }
