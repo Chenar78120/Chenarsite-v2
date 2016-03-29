@@ -805,9 +805,46 @@ h2 {
   font-size: 70px;
   text-align: center;
 }
-@media screen and (orientation: portrait) {
-  .bgs {
-    background: url(../m/blur-mobile.jpg) 100% no-repeat;
+@media screen and (max-device-width: 1280px) {
+  html {
+    background-size: cover;
+    font-family: source-sans-pro, sans-serif;
+  }
+  body {
+    background: url(../../m/blur-mobile.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .metro {
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+  .accueil {
+    position: relative;
+    top: 0vh;
+  }
+  .accueil p {
+    font-size: 24px;
+    line-height: 2em;
+    text-align: center;
+  }
+  .accueil img {
+    height: 50vh;
+    width: 70vw;
+  }
+  .accueil h1 {
+    margin-top: -10px;
+  }
+  h1 {
+    font-size: 65px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 65px;
+    text-align: center;
   }
 }
 .metro .pull-left {
@@ -1072,6 +1109,118 @@ h2 {
   transition: all 1s;
   z-index: 50;
 }
+@media screen and (max-device-width: 1024px) {
+  .metro .pull-left {
+    float: left;
+  }
+  .metro .pull-right {
+    float: right;
+  }
+  .metro .large-top {
+    position: relative;
+    width: 75vw;
+    height: 50vh;
+    background: #111;
+    margin: 1px;
+    overflow: hidden;
+  }
+  .metro .large-top .melies {
+    position: relative;
+    top: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/melies.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-top .fruitgy {
+    position: relative;
+    top: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/fruitgy.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-bottom {
+    position: relative;
+    width: 75vw;
+    height: 50vh;
+    background: #111;
+    margin: 1px;
+    overflow: hidden;
+  }
+  .metro .large-bottom .paris {
+    position: relative;
+    top: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/paris.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-bottom .caravan {
+    position: relative;
+    top: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/image/caravan.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-right {
+    position: relative;
+    width: 75vw;
+    height: 50vh;
+    background: #111;
+    margin: 1px;
+    overflow: hidden;
+  }
+  .metro .large-right .vingt {
+    position: relative;
+    left: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/vingt.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-right .showreel {
+    position: relative;
+    left: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/showreel.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-left {
+    position: relative;
+    width: 75vw;
+    height: 50vh;
+    background: #111;
+    margin: 1px;
+    overflow: hidden;
+  }
+  .metro .large-left .odysee {
+    position: relative;
+    right: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/odysee.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+  .metro .large-left .artdeco {
+    position: relative;
+    right: 0;
+    height: 50vh;
+    width: 75vw;
+    background: url(../../media/vignette/artdeco.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+  }
+}
 .metro .pull-left {
   float: left;
 }
@@ -1251,6 +1400,114 @@ h2 {
   background-size: cover;
   transition: all 1s;
   z-index: 50;
+}
+@media screen and (max-device-width: 1024px) {
+  .metro .pull-left {
+    float: left;
+  }
+  .metro .pull-right {
+    float: right;
+  }
+  .metro .medium-top {
+    position: relative;
+    width: 75vw;
+    height: 25vh;
+    background: #111;
+    margin: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+  .metro .medium-top .tatoo {
+    position: relative;
+    bottom: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(http://hqscreen.com/wallpapers/m/53/tattoos_men_fingers_blurred_background_m52522.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .medium-top .scruff {
+    position: relative;
+    bottom: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(../../media/vignette/scruff.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .medium-bottom {
+    position: relative;
+    width: 75vw;
+    height: 25vh;
+    background: #111;
+    margin: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+  .metro .medium-bottom .sceno {
+    position: relative;
+    top: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(../../media/image/sceno.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .medium-right {
+    position: relative;
+    width: 75vw;
+    height: 25vh;
+    background: #111;
+    margin: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+  .metro .medium-right .svj {
+    position: relative;
+    right: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(../../media/image/svj.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .medium-left {
+    position: relative;
+    width: 75vw;
+    height: 25vh;
+    background: #111;
+    margin: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+  .metro .medium-left .bogus {
+    position: relative;
+    left: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(../../media/image/bogus.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .medium-left .panama {
+    position: relative;
+    left: 0;
+    height: 25vh;
+    width: 75vw;
+    background: url(../../media/image/panama.png) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
 }
 .metro .pull-left {
   float: left;
@@ -1519,6 +1776,180 @@ h2 {
   background-size: cover;
   transition: all 1s;
   z-index: 50;
+}
+@media screen and (max-device-width: 1024px) {
+  .metro .small-top {
+    position: relative;
+    width: 35vw;
+    height: 23vh;
+    background: #111;
+    margin: 2.5px;
+    overflow: hidden;
+  }
+  .metro .small-top .absolut {
+    position: relative;
+    bottom: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/vignette/absolut.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-top .pleinsens {
+    position: relative;
+    bottom: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/pleinsens.png) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-top .feist {
+    position: relative;
+    bottom: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/feist.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-top .pavillon {
+    position: relative;
+    bottom: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/pavillon.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-top .austrelitz {
+    position: relative;
+    bottom: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/austrelitz.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-bottom {
+    position: relative;
+    width: 35vw;
+    height: 23vh;
+    background: #111;
+    margin: 2.5px;
+    overflow: hidden;
+  }
+  .metro .small-bottom .saulbass {
+    position: relative;
+    top: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/vignette/saulbass.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-bottom .typo {
+    position: relative;
+    top: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/vignette/typo.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-bottom .coffret {
+    position: relative;
+    top: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/coffret.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-bottom .hopital {
+    position: relative;
+    top: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/hopital.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-right {
+    position: relative;
+    width: 35vw;
+    height: 23vh;
+    background: #111;
+    margin: 2.5px;
+    overflow: hidden;
+  }
+  .metro .small-right .partisan {
+    position: relative;
+    right: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/vignette/partisan.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-right .pere {
+    position: relative;
+    right: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/pere.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-left {
+    position: relative;
+    width: 35vw;
+    height: 23vh;
+    background: #111;
+    margin: 2.5px;
+    overflow: hidden;
+  }
+  .metro .small-left .vivaldi {
+    position: relative;
+    left: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/vignette/vivaldi.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-left .pompidou {
+    position: relative;
+    left: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/pompidou.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
+  .metro .small-left .cent {
+    position: relative;
+    left: 0;
+    height: 23vh;
+    width: 35vw;
+    background: url(../../media/image/cent.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 50;
+  }
 }
 .menu-icon {
   position: fixed;
