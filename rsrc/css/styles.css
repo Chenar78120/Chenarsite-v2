@@ -751,10 +751,6 @@ a {
     opacity: 1;
   }
 }
-/* 
-	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
-	http://bricss.net/post/11230266445/css-hack-to-target-opera 
-*/
 x:-o-prefocus,
 .lightbox img {
   height: 100%;
@@ -852,44 +848,6 @@ h2 {
 }
 .metro .pull-right {
   float: right;
-}
-.metro .largexl-bottom {
-  position: relative;
-  width: 810px;
-  height: 400px;
-  margin: 5px;
-  background: #111;
-  overflow: hidden;
-}
-.metro .largexl-bottom:hover .amazones {
-  top: -100px;
-}
-.metro .largexl-bottom:hover .lgxl {
-  bottom: 0;
-}
-.metro .largexl-bottom .lgxl {
-  width: 810px;
-  height: 100px;
-  background: #fff;
-  position: absolute;
-  bottom: -100px;
-  transition: all 1s;
-  z-index: 100;
-}
-.metro .largexl-bottom .lgxl h1 {
-  font-size: 6em;
-  text-align: center;
-  margin-top: 0px;
-}
-.metro .largexl-bottom .amazones {
-  position: relative;
-  top: 0;
-  height: 400px;
-  width: 810px;
-  background: url(../../media/vignette/amazones.jpg) no-repeat center;
-  background-size: cover;
-  transition: all 1s;
-  z-index: 50;
 }
 .metro .large-top {
   position: relative;
@@ -1109,7 +1067,7 @@ h2 {
   transition: all 1s;
   z-index: 50;
 }
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .metro .pull-left {
     float: left;
   }
@@ -1401,7 +1359,7 @@ h2 {
   transition: all 1s;
   z-index: 50;
 }
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .metro .pull-left {
     float: left;
   }
@@ -1777,7 +1735,7 @@ h2 {
   transition: all 1s;
   z-index: 50;
 }
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .metro .small-top {
     position: relative;
     width: 35vw;
