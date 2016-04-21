@@ -615,7 +615,7 @@ a {
   background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, #000000 100%);
   background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, #000000 100%);
 }
-.lightbox .info {
+.lightbox > div {
   position: relative;
   color: #eeeeee;
   opacity: 0;
@@ -632,29 +632,29 @@ a {
   -ms-transition: opacity 0.3s linear 1.3s;
   transition: opacity 0.3s linear 1.3s;
 }
-.lightbox .info h3,
-.lightbox .info p {
+.lightbox div h3,
+.lightbox div p {
   padding: 0px 20px;
   width: 200px;
   height: 60px;
 }
-.lightbox .info h3 {
+.lightbox div h3 {
   font-size: 36px;
   float: left;
   text-align: right;
   border-right: 1px solid rgba(27, 54, 81, 0.4);
 }
-.lightbox .info h3 span,
-.lightbox .info p {
+.lightbox div h3 span,
+.lightbox div p {
   font-size: 16px;
   font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
   font-style: italic;
 }
-.lightbox .info h3 span {
+.lightbox div h3 span {
   display: block;
   line-height: 6px;
 }
-.lightbox .info p {
+.lightbox div p {
   text-align: left;
   float: left;
   width: 200px;
@@ -751,6 +751,10 @@ a {
     opacity: 1;
   }
 }
+/* 
+	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
+	http://bricss.net/post/11230266445/css-hack-to-target-opera 
+*/
 x:-o-prefocus,
 .lightbox img {
   height: 100%;
@@ -758,336 +762,6 @@ x:-o-prefocus,
 .lightbox p,
 .lightbox h3 {
   text-shadow: 3px 3px 3px #969696;
-}
-/* NEW EXPERIMENT */
-/* Slider Setup */
-input {
-  display: none;
-}
-#slide1:checked ~ #slides .inner {
-  margin-left: 0;
-}
-#slide2:checked ~ #slides .inner {
-  margin-left: -100%;
-}
-#slide3:checked ~ #slides .inner {
-  margin-left: -200%;
-}
-#slide4:checked ~ #slides .inner {
-  margin-left: -300%;
-}
-#slide5:checked ~ #slides .inner {
-  margin-left: -400%;
-}
-#overflow {
-  width: 100%;
-  overflow: hidden;
-}
-#slides .inner {
-  width: 500%;
-  line-height: 0;
-}
-#slides article {
-  width: 20%;
-  float: left;
-}
-/* Slider Styling */
-/* Control Setup */
-#controls {
-  margin: -25% 0 0 0;
-  width: 100%;
-  height: 50px;
-}
-#controls label {
-  display: none;
-  width: 50px;
-  height: 50px;
-  opacity: 0.3;
-}
-#active {
-  margin: 23% 0 0;
-  text-align: center;
-}
-#active label {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #bbb;
-}
-#active label:hover {
-  background: #ccc;
-  border-color: #777 !important;
-}
-#controls label:hover {
-  opacity: 0.8;
-}
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(5),
-#slide5:checked ~ #controls label:nth-child(1) {
-  background: url('next.png') no-repeat;
-  float: right;
-  margin: 0 -70px 0 0;
-  display: block;
-}
-#slide1:checked ~ #controls label:nth-child(5),
-#slide2:checked ~ #controls label:nth-child(1),
-#slide3:checked ~ #controls label:nth-child(2),
-#slide4:checked ~ #controls label:nth-child(3),
-#slide5:checked ~ #controls label:nth-child(4) {
-  background: url('prev.png') no-repeat;
-  float: left;
-  margin: 0 0 0 -70px;
-  display: block;
-}
-#slide1:checked ~ #active label:nth-child(1),
-#slide2:checked ~ #active label:nth-child(2),
-#slide3:checked ~ #active label:nth-child(3),
-#slide4:checked ~ #active label:nth-child(4),
-#slide5:checked ~ #active label:nth-child(5) {
-  background: #333;
-  border-color: #333 !important;
-}
-/* Info Box */
-.info {
-  line-height: 20px;
-  margin: 0 0 -150%;
-  position: absolute;
-  font-style: italic;
-  padding: 30px 30px;
-  opacity: 0;
-  color: #000;
-  text-align: left;
-}
-.info h3 {
-  color: #333;
-  margin: 0 0 5px;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-}
-/* Slider Styling */
-#slides {
-  margin: 45px 0 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px #666;
-  padding: 1%;
-  background: #fff;
-  background: #fcfff4;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #fcfff4 0%, #dbdac9 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfff4), color-stop(100%, #dbdac9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #fcfff4 0%, #dbdac9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #fcfff4 0%, #dbdac9 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #fcfff4 0%, #dbdac9 100%);
-  /* IE10+ */
-  background: linear-gradient(top, #fcfff4 0%, #dbdac9 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#dbdac9', GradientType=0);
-  /* IE6-9 */
-}
-/* Animation */
-#slides .inner {
-  -webkit-transform: translateZ(0);
-  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  -ms-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  /* easeInOutQuart */
-  -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  -ms-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  /* easeInOutQuart */
-}
-#slider {
-  -webkit-transform: translateZ(0);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-#controls label {
-  -webkit-transform: translateZ(0);
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
-}
-#slide1:checked ~ #slides article:nth-child(1) .info,
-#slide2:checked ~ #slides article:nth-child(2) .info,
-#slide3:checked ~ #slides article:nth-child(3) .info,
-#slide4:checked ~ #slides article:nth-child(4) .info,
-#slide5:checked ~ #slides article:nth-child(5) .info {
-  opacity: 1;
-  -webkit-transition: all 1s ease-out 0.6s;
-  -moz-transition: all 1s ease-out 0.6s;
-  -o-transition: all 1s ease-out 0.6s;
-  transition: all 1s ease-out 0.6s;
-}
-.info,
-#controls,
-#slides,
-#active,
-#active label,
-.info h3,
-.desktop,
-.tablet,
-.mobile {
-  -webkit-transform: translateZ(0);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-/* Respond Options */
-#desktop:checked ~ #slider {
-  max-width: 960px;
-}
-#tablet:checked ~ #slider {
-  max-width: 850px;
-}
-#mobile:checked ~ #slider {
-  max-width: 450px;
-}
-#desktop:checked ~ #slider .desktop,
-#tablet:checked ~ #slider .tablet,
-#mobile:checked ~ #slider .mobile {
-  color: #777;
-  opacity: 1;
-}
-.desktop,
-.tablet,
-.mobile {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  padding-top: 50px;
-  opacity: 0.35;
-  font-size: 12px;
-}
-.desktop:hover,
-.tablet:hover,
-.mobile:hover {
-  opacity: 0.2;
-}
-.desktop {
-  background: url('desktop.png') no-repeat;
-}
-.tablet {
-  background: url('tablet.png') no-repeat;
-}
-.mobile {
-  background: url('mobile.png') no-repeat;
-}
-/* Responsive Styling */
-/* Tablet */
-#tablet:checked ~ #slider #controls {
-  margin: -25% 0 0 12%;
-  width: 76%;
-  height: 50px;
-}
-#tablet:checked ~ #slider #controls label {
-  -moz-transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-#tablet:checked ~ #slider #slides,
-#mobile:checked ~ #slider #slides {
-  padding: 1% 0;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-#tablet:checked ~ #slider #active {
-  margin: 22% 0 0;
-}
-@media only screen and (max-width: 850px) and (min-width: 450px) {
-  #slider #controls {
-    margin: -25% 0 0 15%;
-    width: 70%;
-    height: 50px;
-  }
-  #slider #controls label {
-    -moz-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  #slider #slides {
-    padding: 1% 0;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-  }
-  #slider #active {
-    margin: 22% 0 0;
-  }
-}
-/* Mobile */
-#mobile:checked ~ #slider #controls {
-  margin: -28% 0 0 24%;
-  width: 50%;
-  height: 50px;
-}
-#mobile:checked ~ #slider #active {
-  margin: 23% 0 0;
-}
-#mobile:checked ~ #slider #slides .info {
-  opacity: 0 !important;
-}
-#mobile:checked ~ #slider #controls label {
-  -moz-transform: scale(0.6);
-  -webkit-transform: scale(0.6);
-  -o-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  transform: scale(0.6);
-}
-@media only screen and (max-width: 450px) {
-  #slider #controls {
-    margin: -28% 0 0 24%;
-    width: 50%;
-    height: 50px;
-  }
-  #slider #active {
-    margin: 23% 0 0;
-  }
-  #slider #slides {
-    padding: 1% 0;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-  }
-  #slider #slides .info {
-    opacity: 0 !important;
-  }
-  #slider #controls label {
-    -moz-transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    -o-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6);
-  }
-}
-@media only screen and (min-width: 850px) {
-  body {
-    padding: 0 80px;
-  }
 }
 html {
   background-size: cover;
@@ -1310,7 +984,8 @@ h2 {
   overflow: hidden;
 }
 .metro .large-right:hover .vingt,
-.metro .large-right:hover .showreel {
+.metro .large-right:hover .showreel,
+.metro .large-right:hover .p2 {
   left: -100px;
 }
 .metro .large-right:hover .lg {
@@ -1346,6 +1021,16 @@ h2 {
   height: 310px;
   width: 400px;
   background: url(../../media/vignette/showreel.jpg) no-repeat center;
+  background-size: cover;
+  transition: all 1s;
+  z-index: 50;
+}
+.metro .large-right .p2 {
+  position: relative;
+  left: 0;
+  height: 310px;
+  width: 400px;
+  background: url(../../media/image/12.jpg) no-repeat center;
   background-size: cover;
   transition: all 1s;
   z-index: 50;
